@@ -1,0 +1,9 @@
+<div class="mx-auto max-w-xl border p-5 rounded-md shadow-lg">
+  <.header class="text-center">Confirm account</.header>
+
+  <.simple_form for={@conn.params["user"]} as={:user} action={~p"/users/confirm/#{@token}"}>
+    <:actions>
+      <.button>Confirm my account</.button>
+    </:actions>
+  </.simple_form>
+</div>
